@@ -150,7 +150,7 @@ const DesktopNav = () => {
                     </TabList>
 
                     <TabPanels
-                        bg={'#dee2e6'}
+                        bg={'#e9ecef'}
                     >
                         {/* dashboard  */}
                         <TabPanel

@@ -1,7 +1,7 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Input, Stack, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
-import RigthBar from './generale/RigthBar';
+
 
 const MobileNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -32,7 +32,7 @@ const MobileNav = () => {
                         <DrawerHeader></DrawerHeader>
 
                         <DrawerBody>
-                            <RigthBar></RigthBar>
+                            
                         </DrawerBody>
 
                         <DrawerFooter>
