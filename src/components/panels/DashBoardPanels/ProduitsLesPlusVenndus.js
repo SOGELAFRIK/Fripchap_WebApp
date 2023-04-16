@@ -49,7 +49,7 @@ const ProduitsLesPlusVenndus = () => {
         <>
             <Flex
 
-                w={'22em'} h={'20em'} bg={'#fff'} borderRadius={'10px'}
+                w={{ md: '70%', xl: '50%' }} h={'20em'} bg={'#fff'} borderRadius={'10px'}
                 flexDirection={'column'}
                 boxShadow={' rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}
             >

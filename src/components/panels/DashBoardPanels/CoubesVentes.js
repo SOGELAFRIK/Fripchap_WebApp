@@ -8,7 +8,7 @@ const CourbesVentes = () => {
     return (
         <>
             <Flex
-                w={'50em'} h={'25em'} bg={'#fff'}
+                w={{md:'95%',xl:'90%'}} h={{md:'20em',xl:'25em'}} bg={'#fff'}
                 mt={'3em'} borderRadius={'10px'}
                 boxShadow={' rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}
                 flexDirection={'column'}

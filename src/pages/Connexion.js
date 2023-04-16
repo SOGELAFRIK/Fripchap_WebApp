@@ -1,7 +1,10 @@
 import Logo from '@/components/generale/Logo';
-import { Box, Button, Center, Flex, Input, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Center, Flex, Input, InputGroup, InputRightElement, Link, Stack, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
 
 const Connexion = () => {
+    const [show, setShow] = useState(false)
+    const handleClick = () => setShow(!show)
     return (
         <>
             {/* le main  */}
@@ -64,10 +67,23 @@ const Connexion = () => {
                             <Text
                                 fontWeight={'bold'} fontSize={'1.5em'}
                             >Mot de Passe</Text>
-                            <Input
-                                w={'100%'} h={'4em'} bg={'#fff'} borderRadius={'full'}
-                                placeholder='mot de passe' _placeholder={{ color: '#000' }}
-                            ></Input>
+                            <InputGroup>
+
+                                <Input
+                                    w={'100%'} h={'4em'} bg={'#fff'} borderRadius={'full'}
+                                    placeholder='mot de passe' _placeholder={{ color: '#000' }}
+                                    type={show ? 'text' : 'password'} 
+                                    _valid={{border:'1px solid red'}}
+                                ></Input>
+
+                                <InputRightElement width='4.5rem'>
+                                    <Button h='1.75rem' size='sm' onClick={handleClick}>
+                                        {show ? 'Hide' : 'Show'}
+                                    </Button>
+                                </InputRightElement>
+
+                            </InputGroup>
+
                         </Stack>
 
                     </Flex>

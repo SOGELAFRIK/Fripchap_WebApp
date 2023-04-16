@@ -39,10 +39,11 @@ const Facture = () => {
     return (
         <>
             <Center
-                w={'30%'} h={'100%'}
+                w={{ md: '100%', xl: '30%' }} h={'100%'}
+                mt={{ md: '2em', xl: '0em' }}
             >
                 <Flex
-                    w={'90%'} h={'30em'} bg={'#fff'} borderRadius={'10px'}
+                    w={'90%'} h={{ md: '20em', xl: '30em' }} bg={'#fff'} borderRadius={'10px'}
                     boxShadow={' rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}
                     flexDirection={'column'}
                 >

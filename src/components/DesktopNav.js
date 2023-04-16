@@ -3,12 +3,12 @@ import React from 'react';
 import { ChevronDownIcon, EmailIcon, Search2Icon } from '@chakra-ui/icons';
 import { faBell, faHomeLgAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import DashBoardPanels from './panels/DashBoardPanels';
-import ProduitsPanels from './panels/ProduitsPanels';
-import CommandesPanels from './panels/CommandesPanels';
-import UtilisateursPanels from './panels/UtilisateursPanels';
-import EmployePanels from './panels/EmployePanels';
-import AdminProfilePanels from './panels/AdminProfilePanels';
+import DashBoardPanels from './panels/panelsStruct/DashBoardPanels';
+import ProduitsPanels from './panels/panelsStruct/ProduitsPanels';
+import CommandesPanels from './panels/panelsStruct/CommandesPanels';
+import UtilisateursPanels from './panels/panelsStruct/UtilisateursPanels';
+import EmployePanels from './panels/panelsStruct/EmployePanels';
+import AdminProfilePanels from './panels/panelsStruct/AdminProfilePanels';
 
 const DesktopNav = () => {
     return (
@@ -16,6 +16,7 @@ const DesktopNav = () => {
             <Stack
                 w={'100%'} h={'auto'} direction={'column'} spacing={'0'}
             >
+                {/* le logo et la nav laterale  */}
                 <Stack
                     w={'100%'} direction={'row'} spacing={'0'}
                 >
@@ -99,11 +100,11 @@ const DesktopNav = () => {
 
                 <Tabs
                     variant='unstyled' display={'flex'} flexDirection={'row'}
-                    w={'100%'} h={'150vh'}
+                    w={'100%'} minH={'100vh'}
                 >
                     <TabList
-                        w={'17%'} h={'100%'}
-                        flexDirection={'column'} bg={'#fff'}
+                        w={{ md: '30%', xl: '17%' }}
+                        flexDirection={'column'}
                     >
 
                         <Tab
@@ -151,6 +152,7 @@ const DesktopNav = () => {
 
                     <TabPanels
                         bg={'#e9ecef'}
+                        w={{ md: '70%', xl: '83%' }} h={'100%'}
                     >
                         {/* dashboard  */}
                         <TabPanel

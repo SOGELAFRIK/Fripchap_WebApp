@@ -1,6 +1,7 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Input, Stack, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
+import DashBoardPanels from './panels/panelsStruct/DashBoardPanels';
 
 
 const MobileNav = () => {
@@ -43,6 +44,7 @@ const MobileNav = () => {
                     </DrawerContent>
                 </Drawer>
             </Stack>
+            {/* <DashBoardPanels></DashBoardPanels> */}
         </>
     );
 };
